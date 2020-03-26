@@ -23,6 +23,8 @@ public:
 	
 	UFUNCTION(BlueprintImplementableEvent, Category = "GameMode")
 	void OnMissionCompleted(APawn* InstigatorPawn, bool bMissionSucces);
+
+
 };
 
 
