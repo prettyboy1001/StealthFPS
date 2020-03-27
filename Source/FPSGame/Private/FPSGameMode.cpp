@@ -40,7 +40,8 @@ void AFPSGameMode::CompleteMission(APawn* InstigatorPawn, bool bMissionSuccess)
 		}
 		else 
 		{
-			UE_LOG(LogTemp, Warning, TEXT("Spectating Viewpoint Class is nullptr, Please update GameMode Class with Valid subclass, Cannot change viewtarget class"));
+			UE_LOG(LogTemp, Warning, TEXT("Spectating Viewpoint Class is nullptr, Please update GameMode \
+			Class with Valid subclass, Cannot change viewtarget class"));
 		}
 	}
 
