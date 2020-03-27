@@ -62,7 +62,7 @@ protected:
 
 	UFUNCTION(Server, Reliable, WithValidation)
 	void ServerFire();
-
+	
 	/** Handles moving forward/backward */
 	void MoveForward(float Val);
 
@@ -79,5 +79,6 @@ public:
 	UCameraComponent* GetFirstPersonCameraComponent() const { return CameraComponent; }
 
 	virtual void Tick(float DeltaTime) override;
+
 };
 
