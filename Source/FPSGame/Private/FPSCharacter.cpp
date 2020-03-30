@@ -55,7 +55,7 @@ void AFPSCharacter::Tick(float DeltaTime)
 	if (! IsLocallyControlled())
 	{
 		FRotator NewRot = CameraComponent->RelativeRotation;
-		NewRot.Pitch = RemoteViewPitch * 360.0f / 255.0f;
+		NewRot.Pitch = RemoteViewPitch * 360.0f / 255.0f; //8位2进制数能放下数字255
 
 		CameraComponent->SetRelativeRotation(NewRot);
 	}	
