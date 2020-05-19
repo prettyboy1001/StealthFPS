@@ -7,7 +7,6 @@
 #include "FPSGameMode.h"
 #include "Net/UnrealNetwork.h"
 
-
 // Sets default values
 AFPSAIGuard::AFPSAIGuard()
 {
@@ -86,6 +85,12 @@ void AFPSAIGuard::OnRep_GuardState()
 	OnStateChanged(GuardState);
 	
 
+}
+
+
+void AFPSAIGuard::OnRep_GuardState()
+{
+	OnStateChanged(GuardState);
 }
 
 void AFPSAIGuard::SetGuardState(EAIState NewState)
